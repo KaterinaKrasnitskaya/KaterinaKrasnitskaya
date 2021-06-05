@@ -10,7 +10,7 @@
 
 
     <style>
-        a.rollover {
+        a {
             background: url(./star0.png);
             display: block;
             width: 76px;
@@ -18,8 +18,21 @@
             background-repeat: repeat-x;
         }
         
-        a.rollover:hover {
+        a:hover {
             background: url(./star1.png);
+        }
+        
+        a:hover~a {
+            background: url(./star1.png);
+        }
+        
+        a {
+            float: right;
+            margin: 10px;
+        }
+        
+        div {
+            float: left;
         }
     </style>
 
@@ -27,14 +40,14 @@
 
 <body>
     <div>
-        <a href="#" class="rollover" ; style="float: left;"> </a>
-        <a href="#" class="rollover" ; style="float: left;"> </a>
-        <a href="#" class="rollover" ; style="float: left;"> </a>
-        <a href="#" class="rollover" ; style="float: left;"> </a>
-        <a href="#" class="rollover" ; style="float: left;"> </a>
-
+        <a href=" # "> </a>
+        <a href="# "> </a>
+        <a href="# "> </a>
+        <a href="# "> </a>
+        <a href="# "> </a>
 
     </div>
+
 
 
 
