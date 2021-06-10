@@ -20,46 +20,66 @@
         }
         
         textarea {
-            width: 95%;
+            width: 99%;
             height: 100px
         }
         
         .aaa {
-            width: 95%;
+            width: 99%;
         }
         
         @media all and (min-width:700px) {
+            br {
+                display: none
+            }
             div {
                 width: auto;
+                margin: auto;
+            }
+            p {
+                width: auto;
+            }
+            textarea {
+                width: 99%;
+                height: 100px
+            }
+            .aaa {
+                width: 80%;
+                float: right;
             }
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div style="padding-left: 20px; padding-right: 10px">
         <p> Для публикации вашей статьи заполните пожалуйста, следующую форму: </p> <br>
         <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
-            <p>Название статьи</p>
-            <input class="aaa" type="text" name="head">
-            <p> Рубрика: </p>
+            <label>Название статьи: 
+            <input class="aaa" type="text" name="head"> </label>
+            <label> Рубрика: 
             <select class="aaa" name="rubrika">
                 <option value="1">программирование</option>
                 <option value="1">графика и дизайн</option>
                 <option value="1">компьютерная техника</option>
-            </select>
-            <p> Публикация: </p>
+            </select> </label>
+
+
+            <p>Публикация: </p>
             <input type="radio" name="publik" value="1"> на сайте <br>
             <input type="radio" name="publik" value="2"> в журнале<br>
-            <input type="radio" name="publik" value="3"> на сайте и в журнале <br> Разрешить комментарии
-            <input type="checkbox" name="komment" checked>
-            <p>Текст статьи: </p>
+            <input type="radio" name="publik" value="3"> на сайте и в журнале <br>
+            <div> Разрешить комментарии: <input type="checkbox" name="komment" checked> </div>
+
+            <label>Текст статьи:
             <textarea name="test"></textarea>
-            <input type="submit" value="Опубликовать">
+            <input type="submit" value="Опубликовать"> </label>
+            <div>
+
 
         </form>
 
-    </div>
+        </div>
 
 </body>
 
