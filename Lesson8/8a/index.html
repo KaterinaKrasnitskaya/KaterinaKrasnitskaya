@@ -47,6 +47,9 @@
                 width: 80%;
                 float: right;
             }
+            .public {
+                float: left;
+            }
         }
     </style>
 </head>
@@ -55,20 +58,29 @@
     <div style="padding-left: 20px; padding-right: 10px">
         <p> Для публикации вашей статьи заполните пожалуйста, следующую форму: </p> <br>
         <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
-            <label>Название статьи: 
+            <div>
+                <label>Название статьи: 
             <input class="aaa" type="text" name="head"> </label>
-            <label> Рубрика: 
+                <div style="clear: both;"></div>
+            </div>
+            <div> <label> Рубрика: 
             <select class="aaa" name="rubrika">
                 <option value="1">программирование</option>
                 <option value="1">графика и дизайн</option>
                 <option value="1">компьютерная техника</option>
-            </select> </label>
+            </select> 
+            <div style="clear: both;"></div>
+                 </div>
+             <div> 
 
+                </label>
+                <p class="public"> Публикация:</p>
+                <input type="radio" name="publik" value="1"> на сайте <br>
+                <input type="radio" name="publik" value="2"> в журнале<br>
+                <input type="radio" name="publik" value="3"> на сайте и в журнале <br>
+                <div style="clear: both;"></div>
+            </div>
 
-            <p>Публикация: </p>
-            <input type="radio" name="publik" value="1"> на сайте <br>
-            <input type="radio" name="publik" value="2"> в журнале<br>
-            <input type="radio" name="publik" value="3"> на сайте и в журнале <br>
             <div> Разрешить комментарии: <input type="checkbox" name="komment" checked> </div>
 
             <label>Текст статьи:
