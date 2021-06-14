@@ -18,11 +18,11 @@
             border: solid gray 1px;
         }
         
-        tr:nth-child(odd) td:nth-child(odd) {
+        tr:nth-child(odd) td:nth-child(even) {
             background-color: black;
         }
         
-        tr:nth-child(even) td:nth-child(even) {
+        tr:nth-child(even) td:nth-child(odd) {
             background-color: black;
         }
         
@@ -36,17 +36,22 @@
             width: 25px;
         }
         
-        #fuck {
+        tr:first-child td:nth-child(odd) {
             background-color: rgb(118, 212, 64);
             height: 25px;
         }
         
-        table.CHESS tr:first-child {
+        tr:first-child td:nth-child(even) {
             background-color: rgb(118, 212, 64);
             height: 25px;
         }
         
-        table.CHESS tr:last-child {
+        tr:last-child td:nth-child(odd) {
+            background-color: rgb(118, 212, 64);
+            height: 25px;
+        }
+        
+        tr:last-child td:nth-child(even) {
             background-color: rgb(118, 212, 64);
             height: 25px;
         }
