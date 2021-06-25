@@ -43,35 +43,47 @@
                 width: 99%;
                 height: 100px
             }
-            .aaa {
-                width: 80%;
-                float: right;
-            }
             .public {
                 float: left;
+            }
+            .flex {
+                display: flex;
+            }
+            .flex1 {
+                flex-basis: 200px;
+                flex-shrink: 0;
+            }
+            .flex2 {
+                flex-basis: 100%;
             }
         }
     </style>
 </head>
 
 <body>
-    <div style="padding-left: 20px; padding-right: 10px">
+    <div>
         <p> Для публикации вашей статьи заполните пожалуйста, следующую форму: </p> <br>
         <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
-            <div>
-                <label>Название статьи: 
-            <input class="aaa" type="text" name="head"> </label>
+            <div class="flex">
+                <div class="flex1">
+                    <label>Название статьи:</div>
+                <div class="flex2">
+            <input class="aaa" type="text" name="head"> </label> </div>
+
                 <div style="clear: both;"></div>
             </div>
-            <div> <label> Рубрика: 
-            <select class="aaa" name="rubrika">
+            <div class="flex1"> <label> Рубрика: 
+            <select class="flex2" name="rubrika">
                 <option value="1">программирование</option>
                 <option value="1">графика и дизайн</option>
                 <option value="1">компьютерная техника</option>
             </select> 
             <div style="clear: both;"></div>
                  </div>
+            </div>
+            
              <div> 
+     
 
                 </label>
                 <p class="public"> Публикация:</p>
