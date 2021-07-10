@@ -10,7 +10,9 @@
 
 <body>
     <input type="button" value="ввод информации о стране" onclick="testFunc()"> <br>
-    <input type="button" value="получение информации о стране" onclick="ask()">
+    <input type="button" value="получение информации о стране" onclick="ask()"> <br>
+    <input type="button" value="перечень всех стран" onclick="inform()"> <br>
+    <input type="button" value="удаление информации о стране" onclick="del()">
 
     <script>
         var countrysH = {};
@@ -26,8 +28,30 @@
         }
 
         function ask() {
-            var askcountry = prompt("Введите название страны");
+            var ask1 = prompt("Введите страну");
+            console.log(ask1)
+            if (ask1 in countrysH) {
+                console.log(ask1, countrysH[ask1])
+            } else {
+                console.log("такой страны нет в списке")
+            }
+
+        }
+
+        function inform() {
             console.log(countrysH)
+        }
+
+        function del() {
+            var ask2 = prompt("Введите страну");
+            console.log(ask2)
+            if (ask2 in countrysH) {
+                delete countrysH[ask2]
+                console.log(countrysH)
+            } else {
+                console.log("такой страны нет в списке")
+            }
+
         }
     </script>
 
