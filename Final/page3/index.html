@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../owl.carousel.min.css">
+    <link rel="stylesheet" href="../owl.theme.default.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyDreams</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-size: cover;
+        }
+        
+        .one {
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .top {
+            margin: 10px;
+        }
+        
+        .picture {
+            margin: 0;
+            padding: 0;
+            display: block;
+            opacity: 0.9;
+            overflow: hidden;
+            width: 100%;
+            float: right;
+        }
+        
+        .conteiner {
+            width: 250px;
+            height: 350px;
+            border: 3px solid rgb(204, 235, 228);
+            margin-right: 25px;
+            margin-top: 25px;
+        }
+        
+        .aaa {
+            display: flex;
+            width: 1920px;
+            flex-wrap: wrap;
+        }
+        
+        .divconteiner1 {}
+        
+        .divconteiner2 {
+            float: left;
+            display: flex;
+            width: 1200px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        iframe {
+            width: 200;
+            height: 150;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+            border: 6px solid rgb(204, 235, 228);
+            border-radius: 15%;
+            filter: grayscale(0.2);
+            filter: drop-shadow(16px 16px 10px rgb(204, 235, 228));
+        }
+        
+        audio {
+            opacity: 20%;
+        }
+        
+        #bbb {
+            margin-top: 40px;
+            overflow: visible;
+            position: relative;
+            margin-top: -300px;
+            width: 80%;
+            margin-left: 20%;
+            overflow: hidden;
+        }
+        
+        .item {
+            width: 300px;
+            height: 300px;
+            margin-right: 5px;
+            border: 6px solid rgb(204, 235, 228);
+            border-radius: 15%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+        
+        .item>img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .anime {
+            margin-top: -650px;
+            margin-left: 90%;
+        }
+        
+        @keyframes loader {
+            0% {
+                transform: rotate(-45deg)
+            }
+            50% {
+                transform: rotate(-135deg)
+            }
+            100% {
+                transform: rotate(-225deg)
+            }
+        }
+        
+        @keyframes span-1 {
+            0% {
+                transform: translate(0);
+            }
+            50% {
+                transform: translate(-50px, 0);
+                border-color: #EE4D68
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+        
+        @keyframes span-2 {
+            0% {
+                transform: translate(0);
+            }
+            50% {
+                transform: translate(50px, 0);
+                border-color: #875678
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+        
+        @keyframes span-3 {
+            0% {
+                transform: translate(0);
+            }
+            50% {
+                transform: translate(0, -50px);
+                border-color: #FF9900
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+        
+        @keyframes span-4 {
+            0% {
+                transform: translate(0);
+            }
+            50% {
+                transform: translate(0, 50px);
+                border-color: #00E4F6
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            animation: loader 2s infinite ease-in-out;
+        }
+        
+        .loader span {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border: 4px solid #0B1B48;
+        }
+        
+        .loader span:nth-child(1) {
+            animation: span-1 2s ease-in-out infinite;
+        }
+        
+        .loader span:nth-child(2) {
+            animation: span-2 2s ease-in-out infinite;
+        }
+        
+        .loader span:nth-child(3) {
+            animation: span-3 2s ease-in-out infinite;
+        }
+        
+        .loader span:nth-child(4) {
+            animation: span-4 2s ease-in-out infinite;
+        }
+        
+        @media all and (max-width:1900px) {
+            #bbb {
+                width: 70%;
+                overflow: hidden;
+            }
+            .item {
+                width: auto;
+                overflow: hidden;
+            }
+            .picture {
+                overflow: hidden;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="top">
+            <p style="color:  rgb(204, 235, 228); font-size:larger;"> BabyDreams
+            </p>
+        </div>
+        <div class="picture">
+            <img src="./zzz.jpg" alt="dolphins" width="100%">
+
+        </div>
+        <audio src="pionerskie-pesni-ty-da-ya-da-my-s-toboy.mp3" controls loop autoplay style="margin-left: 50px; margin-top: 15px;">песенка</audio>
+        <div class="aaa">
+            <div class="divconteiner1">
+                <iframe src="https://www.youtube.com/embed/oBUuh3DIK_A?list=TLPQMTUwNzIwMjGTBmETWdjuLg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe> <br>
+                <iframe src="https://www.youtube.com/embed/LQsBJbMt17I?list=TLPQMTUwNzIwMjGTBmETWdjuLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                <br>
+                <iframe src="https://www.youtube.com/embed/aTOfBMa97Cg?list=TLPQMTUwNzIwMjGTBmETWdjuLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="divconteiner2">
+
+            </div>
+            <div class="owl-carousel owl-theme" id="bbb">
+                <div class="item">
+                    <img src="./1474561844_medvedicy-s-medvezhatami-1.jpg" alt="bear">
+                </div>
+                <div class="item">
+                    <img src="./large-preview-zhiraf_4.jpg" alt="jiraf">
+                </div>
+                <div class="item">
+                    <img src="./lev.jpg" alt="lev">
+                </div>
+                <div class="item">
+                    <img src="./panda.jpg" alt="panda">
+                </div>
+                <div class="item">
+                    <img src="./tigr.jpg" alt="tigr">
+                </div>
+                <div class="item">
+                    <img src="./slon.jpg" alt="slon">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <div class="anime">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../owl.carousel.min.js"></script>
+    <script>
+        (function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        })()
+    </script>
+
+</body>
+
+</html>

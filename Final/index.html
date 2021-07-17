@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@200&display=swap" rel="stylesheet">
+    <title>проще донельзЯ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Piazzolla', serif;
+        }
+        
+        .first {
+            letter-spacing: 30px;
+            color: gray;
+            text-align: center;
+            font-size: 50px;
+            word-spacing: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .svg {
+            float: left;
+            margin-left: 50px;
+        }
+        
+        .okno {
+            position: relative;
+            left: 50%;
+            top: 350px;
+            border-radius: 10px;
+            border: 3px solid indigo;
+            border-style: double;
+            width: 450px;
+            height: 180px;
+        }
+        
+        button {
+            color: indigo;
+            padding: 4px;
+        }
+        
+        #AAA:hover {
+            fill: rgb(204, 235, 228);
+        }
+        
+        #BBB:hover {
+            fill: rgb(252, 244, 233)
+        }
+        
+        #CCC:hover {
+            fill: rgba(196, 64, 71, 0.1);
+        }
+        
+        #DDD:hover {
+            fill: rgb(77, 44, 224);
+            opacity: 30%;
+        }
+        
+        a {
+            color: gray;
+        }
+        
+        @media all and (max-width:1200px) {
+            .svg {
+                margin-bottom: 40px;
+                float: none;
+            }
+            .okno {
+                left: 20px;
+                top: 20px;
+            }
+            .first {
+                letter-spacing: 15px;
+                word-spacing: 15px;
+                font-size: 50px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media all and (max-width:800px) {
+            .svg {
+                margin-left: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">проще донельзЯ</div>
+    <svg class="svg" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+        <g>
+        <a xlink:href="./page3/index.html"><ellipse ry="51.5" rx="238" id="AAA" cy="457.5" cx="285" stroke="gray" fill="#fff"/></a></g>
+        <g> 
+            <a xlink:href="./page4/index.html"><ellipse ry="56" rx="173.5" id="BBB" cy="276" cx="482.5" stroke="gray" fill="#fff"/></a></g>
+        <g>
+     
+            <ellipse ry="41" rx="93.5" id="CCC" cy="371" cx="416.5" stroke="gray" fill="#fff"/></g>
+        <g> 
+            <a xlink:href="./page5/index.html"> <ellipse ry="78" rx="141.5" id="DDD" cy="171" cx="281.5" stroke="gray" fill="#fff"/></a></g>
+        <g><line stroke="gray" id="line" y2="547" x2="360" y1="30" x1="360" fill="none"/>
+        </g>
+        <defs>
+            <linearGradient id="LG1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="3%" stop-color="white" />
+                <stop offset="45%" stop-color="indigo" />
+                <stop offset="100%" stop-color="indigo" stop-opacity="0.7" />
+            </linearGradient>
+            </defs>
+       </svg>
+    <div class="okno" style="position: relative;">
+        <form action="./page2/index.html" target="_blank">
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; ">flex</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 70px; ">position</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 140px; ">url</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 210px; ">img</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 280px; ">z-index</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 350px;">HTML5</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; top: 50px; ">hover</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 70px; top:50px ; ">div</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 140px; top:50px; ">margin</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 210px; top:50px; ">body</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 280px; top:50px; ">br</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 350px; top:50px;">href</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; top: 100px">head</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 70px; top:100px ">section</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 140px; top:100px">class</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 210px; top:100px">style</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 280px; top:100px">span</button>
+            <button style="position: absolute; width: 50px; height: 30px; border-color: gray; display: flex; margin: 20px; left: 350px; top:100px">id</button>
+        </form>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

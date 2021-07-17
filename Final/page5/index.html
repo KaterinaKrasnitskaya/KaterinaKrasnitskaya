@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>
+        weather</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lobster';
+            background-image: url(./frolov-mihail041130.jpeg);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: cover;
+        }
+        
+        input {
+            width: 400px;
+            height: 100px;
+            font-size: 200%;
+            letter-spacing: 5px;
+            opacity: 50%;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input type="button" value="введите город" onclick="ask()"> <br>
+
+    <div class="fun">
+        <script>
+            var countrysH = {
+                "Минск": "+32",
+                "Вьетнам": "+36",
+                "Москва": "+28"
+            };
+
+
+
+            function ask() {
+                var ask1 = prompt("Введите город");
+                if (ask1 in countrysH) {
+                    alert(ask1 + countrysH[ask1])
+                } else {
+                    alert("такого города нет в списке")
+                }
+
+            }
+        </script>
+    </div>
+
+
+
+</body>
+
+</html>
